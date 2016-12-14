@@ -1,0 +1,10 @@
+<aside>
+	<nav ng-repeat="category in $ctrl.categories track by $index">
+		<h1 ng-bind="category.name"></h1>
+		<ul>
+			<li ng-repeat="link in category.links track by $index">
+				<nav-btn href="link.href" name="link.name" tab="0">{{link.display}}</nav-btn>
+			</li>
+		</ul>
+	</nav>
+</aside>
